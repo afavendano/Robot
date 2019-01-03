@@ -25,7 +25,7 @@ User can Serach for products
     Amazon.Search for Products
 
 User must sign in to check out
-    [Documentation]  This is an End to End test
+    [Documentation]  This is an End to End test run1
     [Tags]  Smoke
     Amazon.Goto Page
     Amazon.Search for Products

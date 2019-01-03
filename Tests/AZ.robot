@@ -13,14 +13,22 @@ Test Teardown  End Web Test
 
 
 *** Test Cases ***
-User can Serach for products
-    [Documentation]  This is some basic info about the test
+Open Test Browser
+    [Documentation]  This Test opens and closes the test browser
     [Tags]  Smoke
+    Amazon.Goto Page
+
+User can Serach for products
+    [Documentation]  This Test Open the browser and completes a product search
+    [Tags]  Smoke
+    Amazon.Goto Page
     Amazon.Search for Products
 
 User must sign in to check out
-    [Documentation]  This is some basic info about the test
+    [Documentation]  This is an End to End test
     [Tags]  Smoke
+    Amazon.Goto Page
     Amazon.Search for Products
     Amazon.Select Product from Search Results
     Amazon.Add Product to Cart
+    Amazon.Begin Checkout

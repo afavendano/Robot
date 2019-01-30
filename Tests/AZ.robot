@@ -10,23 +10,26 @@ Test Teardown  End Web Test
 # robot -d results tests/amazon.robot
 
 *** Variables ***
+${BROWSER} =  firefox
+${URL} =   https://www.amazon.com
+${SEARCH_TERM} =  Ferrari 458
 
 
 *** Test Cases ***
-Open Test Browser
+Open/Close Test Browser
     [Documentation]  This Test opens and closes the test browser
-    [Tags]  Smoke
+    [Tags]  Smoke3
     Amazon.Goto Page
 
 User can Serach for products
     [Documentation]  This Test Open the browser and completes a product search
-    [Tags]  Smoke
+    [Tags]  Smoke2
     Amazon.Goto Page
     Amazon.Search for Products
 
 User must sign in to check out
     [Documentation]  This is an End to End test run1
-    [Tags]  Smoke
+    [Tags]  Smoke1
     Amazon.Goto Page
     Amazon.Search for Products
     Amazon.Select Product from Search Results

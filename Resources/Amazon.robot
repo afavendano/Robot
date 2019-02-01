@@ -10,9 +10,10 @@ Goto Page
     LandingPage.Verify Page Loaded
 
 Search for Products
-    Input Text  id=twotabsearchtextbox  Ferrari 458
+    Input Text  id=twotabsearchtextbox  ${SEARCH_TERM}
+    #Ferrari 458
     Click Button  xpath=//*[@id="nav-search"]/form/div[2]/div/input
-    Wait Until Page Contains  results for "Ferrari 458"
+    Wait Until Page Contains  results for "${SEARCH_TERM}"
 
 Select Product from Search Results
     Click Link  css=#result_0 > div > div > div > div.a-fixed-left-grid-col.a-col-right > div.a-row.a-spacing-small > div:nth-child(1) > a

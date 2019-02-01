@@ -3,7 +3,9 @@ Library  SeleniumLibrary
 
 *** Keywords ***
 Beging Web Test
-        Open Browser  http://www.google.com  gc
+        Open Browser  about:blank  ${BROWSER}
+        #http://www.google.com  gc
+        maximize browser window
 
 End Web Test
         Close Browser
